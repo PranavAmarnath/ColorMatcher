@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="412dp"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="385dp"
+        android:layout_height="673dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:text="Score: 0"
+            android:layout_width="278dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="278dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="285dp"
+            android:layout_height="292dp"
+            app:alignmentMode="alignBounds"
+            app:columnCount="4">
+
+            <Button
+                android:id="@+id/topLeft"
+                style="?buttonStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/topRight"
+                style="?buttonStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/bottomLeft"
+                style="?buttonStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/bottomRight"
+                style="?buttonStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Magenta"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
