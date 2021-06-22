@@ -1,5 +1,5 @@
 # ColorMatcher
-#### An Android app to match a random color image from four random color names. The score increases after a correct guess and decreases after an incorrect guess.
+An Android app to match a random color image from four random color names. The score increases after a correct guess and decreases after an incorrect guess.
 
 How the application looks:
 <p align="left">
